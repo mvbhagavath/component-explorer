@@ -1,0 +1,90 @@
+$dark-text:#333;
+$light-grey:#eee;
+$white:#fff;
+
+html * {
+    border-radius: 2px;
+}
+header {
+
+    .navbar-header{
+        margin-left:10px;
+        h2{margin-top:10px};
+
+    }
+}
+
+.component-explorer{
+    font-family: 'Roboto Slab', serif;
+    background: $light-grey;
+    .default-msg{
+        font-size:1.5em;
+        color:$dark-text;
+
+    }
+    .side-menu{
+        padding: 0;
+        list-style: none;
+        background: $light-grey;
+        min-height: 500px;
+        .heading{color:$dark-text; font-size:1.5em; font-weight:bold;padding: 12px 10% 12px 10px;}
+        ul{
+            padding-left: 5px;
+            li {border-bottom: 1px solid $dark-text; list-style:none;}
+            li.noborder {border-left: 5px solid transparent}
+            a{
+                cursor: pointer;
+                color:$dark-text;
+                display:block;
+                padding: 12px 10% 12px 10px;
+                text-decoration: none;
+                &:hover {
+                    background:$white;
+                    color: $dark-text;
+                }
+                &:after {
+                    content: '>';
+                    float: right;
+                }
+            }
+        }
+    }
+    .Ecology{
+        .Overview{
+            .playgroundCode{
+                width:50%;
+                float:left;
+            }
+            .playgroundPreview{
+                width:50%;
+                float:right;
+                padding: 10px;
+            }
+        }
+        .Documentation{
+            th{
+                width: 10%;
+            }
+            tr{
+                &::nth-child(3){
+                    width: 0;
+                }
+            }
+        }
+    }
+    .footer {
+        background: #666;
+        color:$light-grey;
+        padding: 20px 0;
+        font-size: 85%;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        min-height: 60px;
+        text-align: center;
+        .footer-left {
+            float: left
+        }
+    }
+
+}

@@ -6,6 +6,8 @@ import * as Docs from 'docs.js';
 
 const ComponentExplorer = ({ params }) => {
     let { component } = params;
+    let CE = {React}
+    CE[component] = Docs[component]
     return (
         <div className="row">
             <div className="col-md-6">
@@ -18,8 +20,9 @@ const ComponentExplorer = ({ params }) => {
                 <Ecology
                     overview={Docs[`${component}Docs`]}
                     source={parse(Docs[`${component}Raw`])}
-                    scope={{ React, CE: Docs }}
-                    playgroundtheme="blackboard" />
+                    scope={CE}
+                    playgroundtheme="blackboard"
+                />
             </div>
         </div>
     );

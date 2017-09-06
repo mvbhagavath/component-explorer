@@ -1,5 +1,5 @@
 ```playground
-    <CE.Button buttonStyle={{
+    <Button buttonStyle={{
   background: '#3498db',
   border: 0,
   borderRadius: 3,
@@ -14,5 +14,5 @@
   padding: 10
 }}>
   <p>My Button</p>
-</CE.Button>
+</Button>
 ```

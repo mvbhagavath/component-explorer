@@ -1,3 +1,3 @@
 ```playground
-<CE.Rating value ='4' />
+<Rating value ='4' />
 ```
